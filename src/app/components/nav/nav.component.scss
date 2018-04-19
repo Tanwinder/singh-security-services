@@ -2,13 +2,15 @@
 @import '~scss/mixins';
 
 .nav {
+    font-weight: 400;
+    font-size: 1.2em;
     position: relative;
     span{
-        // border-right: 1px solid $light-gray;
-        padding: 20px 16px;
+        border-right: 1px solid $light-gray;
+        padding: 12px 16px;
         &::after {
             content: "";
-            height: 2px;
+            height: 3px;
             width: 0;
             position: absolute;
             left: 0;
@@ -18,27 +20,27 @@
             background-color:$app-color;
             -webkit-transition-property: width;
             transition-property: width;
-            -webkit-transition-duration: 0.4s;
-            transition-duration: 0.4s;
-            -webkit-transition-timing-function: ease-out;
-            transition-timing-function: ease-out;
+            -webkit-transition-duration: $duration;
+            transition-duration: $duration;
+            -webkit-transition-timing-function: $transition-timming;
+            transition-timing-function: $transition-timming;
         }
-        &::before {
-            content: "";
-            position: absolute;
-            z-index: 1;
-            left: 100%;
-            right: 0;
-            top: -12px;
-            background: $app-color;
-            height: 2px;
-            -webkit-transition-property: left;
-            transition-property: left;
-            -webkit-transition-duration: 0.4s;
-            transition-duration: 0.4s;
-            -webkit-transition-timing-function: ease-out;
-            transition-timing-function: ease-out;
-        }
+        // &::before {
+        //     content: "";
+        //     position: absolute;
+        //     z-index: 1;
+        //     left: 100%;
+        //     right: 0;
+        //     top: -12px;
+        //     background: $app-color;
+        //     height: 2px;
+        //     -webkit-transition-property: left;
+        //     transition-property: left;
+        //     -webkit-transition-duration: $duration;
+        //     transition-duration: $duration;
+        //     -webkit-transition-timing-function: $transition-timming;
+        //     transition-timing-function: $transition-timming;
+        // }
         &:hover {
             color: $green;
             cursor: pointer;
@@ -50,4 +52,19 @@
             }
         }
     }
+}
+.footer-nav {
+    @include flex(flex,column,center);
+    border-bottom: 1px solid $light-gray;
+    margin: 10px 0;
+    color: $app-color;
+    & :hover {
+        color: $green;
+        padding-left: 16px;
+        transition: all 0.2s linear;
+        font-size: 1.2em;
+    }
+}
+.active {
+    color: $green!important;
 }

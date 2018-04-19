@@ -1,3 +1,17 @@
+<div class="navbar">
+    <div class="logo"><a routerLink="/" >SinghSecurity</a></div>
+    <div class="navbar-navs">
+        <app-nav *ngFor="let nav of navs" [navclass]="nav.navclass" [name]="nav.name" [routerlink]="nav.routerlink"></app-nav>
+    </div>
+    <div class="phone">
+      <div class="phone-content">Call Now for a FREE QUOTE!</div>
+      <a href="tel:+1403-992-7629" class="phone-link"><span class="phone-number">403-992-7629</span></a>
+    </div>
+</div>
 
-<app-nav *ngFor="let nav of navs" [name]="nav"></app-nav>
+<!-- <a class="nav" routerLink="/" routerLinkActive="active"><span>Home</span></a>
+<a class="nav" routerLink="/commercial" routerLinkActive="active"><span>Commercial</span></a>
+<a class="nav" routerLink="/residential" routerLinkActive="active"><span>Residential</span></a>
+<a class="nav" routerLink="/solutions" routerLinkActive="active"><span>Solutions</span></a>
+<a class="nav" routerLink="/about" routerLinkActive="active"><span>About</span></a> -->
 

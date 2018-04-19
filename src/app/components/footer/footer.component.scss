@@ -1,0 +1,23 @@
+@import '~scss/vars';
+@import '~scss/mixins';
+
+.footer {
+    font-size: 24px;
+    @include flex(flex,space-around,row);
+    font-size: 1.2em;
+    padding-left:10vw;
+    padding-right: 10vw;
+    background-color: $white;
+    & > div {
+        flex-basis: 25%;
+        padding: 20px;
+        color: $black;
+        h3 {
+            border-bottom: 1px solid $gray;
+            color: $app-color;
+        }
+    }
+}
+.footer-navbar {
+    color: $app-color;
+}

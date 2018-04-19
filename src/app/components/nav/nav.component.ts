@@ -7,6 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class NavComponent implements OnInit {
   @Input() name:string;
+  @Input() routerlink:string;
+  @Input() navclass:string;
   constructor() { }
 
   ngOnInit() {

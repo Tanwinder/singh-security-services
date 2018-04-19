@@ -5,8 +5,9 @@
 body {
     color: $app-color;
     background-color: $white;
-    font-size: 16px;
-    font-family: Roboto,Arial,Tahoma,sans-serif
+    font-size: 12px;
+    // font-family: Roboto,Arial,Tahoma,sans-serif;
+    font-family: 'Open Sans',sans-serif;
 }
 a {
     text-decoration: none;
@@ -14,4 +15,16 @@ a {
 }
 button {
     outline: none;
+}
+app-nav:last-of-type {
+    & .nav {
+        & span {
+            border: none!important;
+        }
+    }
+}
+@media only screen and (min-width: 1225px) {
+    body {
+        font-size: 16px;
+    }
 }
