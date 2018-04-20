@@ -22,6 +22,7 @@
     font-family: cursive;
     font-weight: bold;
     cursor: pointer;
+    text-shadow: 2px 2px 2px $green;
     &:hover {
         color: $green;
     }
@@ -68,7 +69,8 @@
 .menu-icon {
     width: 45px;
     height: 45px;
-    border: 1px solid red;
+    border: 1px solid $gray;
+    @extend .shadow;
     border-radius: 5px;
     position: relative;
     display: block;
@@ -95,6 +97,7 @@
     &:checked {
         & ~ .menu-icon {
             .navicon {
+                margin: 21px 4px;
                 background: transparent;
                 &::before {
                     transform: rotate(-45deg);

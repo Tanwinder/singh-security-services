@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MobileNavbarComponent implements OnInit {
   navs: any = [
-    {name: 'Home', routerlink: '/',navclass: 'mobile-nav'},
+    {name: 'Home', routerlink: '/home',navclass: 'mobile-nav'},
     {name: 'Commercial', routerlink: '/commercial', navclass: 'mobile-nav'},
     {name: 'Residential', routerlink: '/residential', navclass: 'mobile-nav'},
     {name: 'Services', routerlink: '/services', navclass: 'mobile-nav'},

@@ -13,8 +13,10 @@
     font-family: cursive;
     font-weight: bold;
     cursor: pointer;
+    text-shadow: 2px 2px 2px $green;
     &:hover {
         color: $green;
+        text-shadow: 2px 2px 2px $app-color;
     }
 }
 .phone {

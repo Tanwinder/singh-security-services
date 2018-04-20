@@ -5,11 +5,12 @@
     font-size: 24px;
     @include flex(flex,space-around,row);
     font-size: 1.2em;
-    padding-left:10vw;
-    padding-right: 10vw;
+    width: 100%;
+    margin: 0 auto;
     background-color: $white;
+    flex-wrap: wrap;
     & > div {
-        flex-basis: 25%;
+        flex-basis: 90%;
         padding: 20px;
         color: $black;
         h3 {
@@ -20,4 +21,14 @@
 }
 .footer-navbar {
     color: $app-color;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer {
+        padding-left:10vw;
+        padding-right: 10vw;
+        & > div {
+            flex-basis: 25%;
+        } 
+    }
 }

@@ -2,6 +2,9 @@
 @import './normalize';
 @import './vars';
 
+* {
+    box-sizing: border-box;
+}
 body {
     color: $app-color;
     background-color: $white;
@@ -9,6 +12,7 @@ body {
     // font-family: Roboto,Arial,Tahoma,sans-serif;
     font-family: 'Open Sans',sans-serif;
 }
+
 a {
     text-decoration: none;
     color: inherit;
