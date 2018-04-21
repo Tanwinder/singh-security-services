@@ -27,6 +27,12 @@ app-nav:last-of-type {
         }
     }
 }
+
+@media only screen and (min-width: 925px) {
+    body {
+        font-size: 14px;
+    }
+} 
 @media only screen and (min-width: 1225px) {
     body {
         font-size: 16px;

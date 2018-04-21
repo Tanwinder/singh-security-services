@@ -9,7 +9,7 @@ export class ResidentialComponent implements OnInit {
   a: any = {
     classvalue: 'fullwidth',
     heading: 'Residential Solutions',
-    paragraph: 'Our interactive security system solutions are designed to allow our customers to stay in control of their homes on the go. Make sure that your home is safe, secure and comfortable with our interactive security systems. With the help of real-time alerts, video viewing, GPS tracking and mobile controls – you can stay connected to your home and your family 24/7!'
+    paragraph: 'Make sure that your home is safe, secure and comfortable with our interactive security systems. With the help of real-time alerts, video viewing, GPS tracking and mobile controls – you can stay connected to your home and your family 24/7!'
   };
 
   data: any = [

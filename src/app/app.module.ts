@@ -22,6 +22,7 @@ import { BackgroundImageComponent } from './components/background-image/backgrou
 import { CoroselComponent } from './components/corosel/corosel.component';
 import { MobileNavbarComponent } from './components/mobile-navbar/mobile-navbar.component';
 import { SecurityServicesComponent } from './components/security-services/security-services.component';
+import { ImageTitleContentComponent } from './components/image-title-content/image-title-content.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -53,7 +54,8 @@ const appRoutes: Routes = [
     BackgroundImageComponent,
     CoroselComponent,
     MobileNavbarComponent,
-    SecurityServicesComponent
+    SecurityServicesComponent,
+    ImageTitleContentComponent
   ],
   imports: [
     RouterModule.forRoot(

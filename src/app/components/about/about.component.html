@@ -1,1 +1,6 @@
-<app-background-image [image]="image" height="100vh" width="100%"></app-background-image>
+ <div class="about">
+    <app-background-image [arrData]="arrData" width="100%" height="auto"></app-background-image>
+    <div class="row-four">
+      <app-image-title-content *ngFor="let content of fourColumnContent" [content]="content"></app-image-title-content>
+    </div>
+ </div>

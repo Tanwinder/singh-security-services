@@ -6,11 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./security-services.component.scss']
 })
 export class SecurityServicesComponent implements OnInit {
-  a: any = {
-    classvalue: 'fullwidth',
-    heading: 'Our Services',
-    paragraph: 'We are the best in the area providing Alarm and Security services',
-  };
+
+  titleData: any = {
+    image: 'http://atpalarms.com/atps/security-cameras-bundle-by-atp-alarms-security-cameras-img1.jpg',
+    content: {
+      title: 'OUR SERVICES',
+      description: 'PROVEN PRODUCTS FOR BETTER PROTECTION',
+      fontsize: '3em',
+      width: '60%',
+      divheight: '70'   //send only number like 80 ,30 etc dont punt % or vh
+    }
+  }
 
   data: any = [
     {
